@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a69e972be2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Spotify - web music for everyone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="syle.css">
+    <link rel="icon" href="./assets/logo.png">
+</head>
+<body>
+    <div class="main">
+
+        <div class="side-bar"> 
+            <div class="nav">
+                <div class="home"><a href="#"><i class="fa-solid fa-house"></i> Home</a></div>
+                <div class="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></div>
+            </div>
+
+            <div class="upper">
+                <div class="library">
+                    <div class="options">
+                        <!-- I added a placeholder URL here so the icon shows up even if your local file path is broken -->
+                        <img class="lib" src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    
+                    <div class="icons">
+                        <i id="plus" class="fa-solid fa-plus"></i>
+                        <i id="arr" class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <!-- FIXED: Changed </h2> to </h5> -->
+                    <h5>Create your first playlist</h5>
+                    <p>It's easy, we'll help you</p>
+                    <button type="button" class="btn btn-light">Create Playlist</button>
+                </div>
+
+                <div class="podcasts">
+                    <!-- FIXED: Changed </h4> to </h5> -->
+                    <h5>Let's find some podcasts to follow</h5>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button type="button" class="btn btn-light">Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png" alt="">
+                    <img class="hide" src="./assets/forward_icon.png" alt="">
+                </div>
+
+                <div class="sticky-nav-options">
+                    <button type="button" class="badge hide">Explore Premium</button>
+                    <button type="button" class="badge dwn"><i class="fa-solid fa-download"></i> Download App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <div class="album">
+                <h4>Recently Played</h4>
+                <div class="card" id="first">
+                    <img src="./assets/card1img.jpeg" alt="">
+                    <h6>Top 50 - Global</h6>
+                    <p>Your daily update of the most played
+                        tracks...
+                    </p>
+
+                </div>
+
+                
+                <h4>Spotiffy original & exclusive podcasts</h4>
+
+                <div class="card-container">
+
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" alt="">
+                        <h6>Mahiye Jinna Sohna</h6>
+                        <p>Darshan Raval
+                        </p>
+    
+                    </div>
+    
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" alt="">
+                        <h6>Silent Ocean</h6>
+                        <p>Arjjit Sing, ROchak Kohli, Tulsi Kumar
+                        </p>
+    
+                    </div>
+    
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" alt="">
+                        <h6>Alter Ego</h6>
+                        <p>Anirudh Ravichander, Thalapathy Vijay
+                        </p>
+    
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/card7img.png" alt="">
+                        <h6>Jhol</h6>
+                        <p>Mannu, Anural Khalid</p>
+    
+                    </div>
+                </div>
+
+                <h4>Featured Charts</h4>
+
+                <div class="card-container">
+
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg" alt="">
+                        <h6>Top Songs - Global</h6>
+                        <p>Your weekly update of the most played
+                            tracks right...
+                        </p>
+    
+                    </div>
+    
+                    <div class="card">
+                        <img src="./assets/caard8img.png" alt="">
+                        <h6>Top 50 - USA</h6>
+                        <p>Your weekly update of the most played
+                            tracks right...
+                        </p>
+    
+                    </div>
+    
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" alt="">
+                        <h6>Top 50 - Global</h6>
+                        <p>Your weekly update of the most played
+                            tracks right...
+                        </p>
+    
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/card9img.png" alt="">
+                        <h6>Top50 - USA</h6>
+                        <p>our daily update of the most played tracks right now - USA.
+                        </p>
+    
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="music-player">
+            <div class="music">
+
+                <div class="img">
+                    <img src="./assets/card2img.jpeg" alt="">
+                </div>
+
+                <div class="para">
+                    <p><span style="font-weight: 700;">Mahiye Hinna Sohna</span> <br>Darshan Raval</p>
+                    
+                </div>
+
+                <div class="music-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-square-plus"></i>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-icon">
+                    <img src="./assets/player_icon1.png" class="oth" alt="">
+                    <img src="./assets/player_icon2.png" class="oth" alt="">
+                    <img src="./assets/player_icon3.png" id="pause-btn" alt="">
+                    <img src="./assets/player_icon4.png" class="oth" alt="">
+                </div>
+
+                <div class="slide">
+                    <span>0:00</span>
+                    <input class="cur-time" type="range">
+                    <span>3:54</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-bars-staggered"></i>
+                <i class="fa-solid fa-bridge-circle-check"></i>
+                <i class="fa-solid fa-volume-low"></i>
+                <input type="range">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
